@@ -5,7 +5,7 @@ class Student
     course_list.remove(course)
   end
 
-  def add_to_schedule(course_list)
+  def add_to_schedule(course_list, course)
     max_courses = course_list.maximum_number_of_courses
     if max_courses < MAX_COURSES
       course_list.add(course)
